@@ -12,6 +12,9 @@ Pipeline:
     → <beat_key>.json   [firmware input]
 
 System requirements: ffmpeg
+
+Example usage: 
+conda run -n drum-machine python /home/user/Desktop/drums/drum-machine/python/yt_to_json.py "https://www.youtube.com/watch?v=Zi_XLOBDo_Y&list=RDZi_XLOBDo_Y&start_radio=1" -o /home/user/Desktop/drums/drum-machine/output 2>&1
 """
 
 import argparse
