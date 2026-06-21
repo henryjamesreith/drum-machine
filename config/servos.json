@@ -1,0 +1,48 @@
+{
+  "serial": {
+    "port": "auto",
+    "baud_rate": 115200,
+    "read_timeout_seconds": 0.05,
+    "command_timeout_seconds": 2.0,
+    "startup_wait_seconds": 2.0
+  },
+  "keys": {
+    "quit": "q",
+    "all_rest": "r",
+    "status": "?"
+  },
+  "servos": {
+    "0": {
+      "name": "cymbal",
+      "key": "a",
+      "return_angle": 90,
+      "strike_angle": 60,
+      "dwell_ms": 200,
+      "step_delay_ms": 0
+    },
+    "1": {
+      "name": "small_tom_1",
+      "key": "s",
+      "return_angle": 90,
+      "strike_angle": 60,
+      "dwell_ms": 100,
+      "step_delay_ms": 0
+    },
+    "2": {
+      "name": "big_drum",
+      "key": "d",
+      "return_angle": 90,
+      "strike_angle": 60,
+      "dwell_ms": 100,
+      "step_delay_ms": 0
+    },
+    "3": {
+      "name": "small_tom_2",
+      "key": "f",
+      "return_angle": 90,
+      "strike_angle": 60,
+      "dwell_ms": 100,
+      "step_delay_ms": 0
+    }
+  }
+}

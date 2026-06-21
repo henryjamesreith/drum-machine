@@ -1,0 +1,190 @@
+{
+  "default": "simple_test",
+  "beats": {
+    "simple_test": {
+      "name": "Simple hardware test",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 250, "servo": 1},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 750, "servo": 3},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1250, "servo": 1},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1750, "servo": 3}
+      ]
+    },
+    "basic_rock": {
+      "name": "Basic rock groove",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 250, "servo": 0},
+        {"time_ms": 500, "servo": 0},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 750, "servo": 0},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1250, "servo": 0},
+        {"time_ms": 1500, "servo": 0},
+        {"time_ms": 1500, "servo": 1},
+        {"time_ms": 1750, "servo": 0}
+      ]
+    },
+    "alternating_toms": {
+      "name": "Alternating tom groove",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 250, "servo": 1},
+        {"time_ms": 500, "servo": 0},
+        {"time_ms": 750, "servo": 3},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1250, "servo": 1},
+        {"time_ms": 1500, "servo": 0},
+        {"time_ms": 1750, "servo": 3}
+      ]
+    },
+    "slow_heavy": {
+      "name": "Slow heavy groove",
+      "length_ms": 3000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 750, "servo": 0},
+        {"time_ms": 750, "servo": 1},
+        {"time_ms": 1500, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 2250, "servo": 0},
+        {"time_ms": 2250, "servo": 3}
+      ]
+    },
+    "four_beat_combo": {
+      "name": "Four beat combo",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1500, "servo": 1}
+      ]
+    },
+    "four_beat_full": {
+      "name": "Four beat full groove",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 0, "servo": 1},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1000, "servo": 1},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1500, "servo": 1}
+      ]
+    },
+    "four_beat_full_with_fill": {
+      "name": "Four beat full groove with fill",
+      "length_ms": 8000,
+      "events": [
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 0, "servo": 1},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1000, "servo": 1},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1500, "servo": 1},
+
+        {"time_ms": 2000, "servo": 2},
+        {"time_ms": 2000, "servo": 1},
+        {"time_ms": 2500, "servo": 2},
+        {"time_ms": 2500, "servo": 1},
+        {"time_ms": 3000, "servo": 2},
+        {"time_ms": 3000, "servo": 1},
+        {"time_ms": 3000, "servo": 0},
+        {"time_ms": 3500, "servo": 2},
+        {"time_ms": 3500, "servo": 1},
+
+        {"time_ms": 4000, "servo": 2},
+        {"time_ms": 4000, "servo": 1},
+        {"time_ms": 4500, "servo": 2},
+        {"time_ms": 4500, "servo": 1},
+        {"time_ms": 5000, "servo": 2},
+        {"time_ms": 5000, "servo": 1},
+        {"time_ms": 5000, "servo": 0},
+        {"time_ms": 5500, "servo": 2},
+        {"time_ms": 5500, "servo": 1},
+
+        {"time_ms": 6000, "servo": 2},
+        {"time_ms": 6000, "servo": 1},
+        {"time_ms": 6500, "servo": 2},
+        {"time_ms": 6500, "servo": 1},
+        {"time_ms": 7000, "servo": 2},
+        {"time_ms": 7000, "servo": 1},
+        {"time_ms": 7000, "servo": 0},
+        {"time_ms": 7250, "servo": 1},
+        {"time_ms": 7375, "servo": 1},
+        {"time_ms": 7500, "servo": 3},
+        {"time_ms": 7625, "servo": 3},
+        {"time_ms": 7750, "servo": 2},
+        {"time_ms": 7875, "servo": 2},
+        {"time_ms": 7875, "servo": 0}
+      ]
+    },
+    "four_beat_alternating": {
+      "name": "Four beat alternating toms",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1500, "servo": 3}
+      ]
+    },
+    "four_beat_cymbal": {
+      "name": "Four beat cymbal groove",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1000, "servo": 0},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1500, "servo": 3}
+      ]
+    },
+    "tom_fill": {
+      "name": "Tom fill",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 500, "servo": 0},
+        {"time_ms": 500, "servo": 2},
+        {"time_ms": 1000, "servo": 1},
+        {"time_ms": 1125, "servo": 1},
+        {"time_ms": 1250, "servo": 3},
+        {"time_ms": 1375, "servo": 3},
+        {"time_ms": 1500, "servo": 2},
+        {"time_ms": 1625, "servo": 2},
+        {"time_ms": 1750, "servo": 0},
+        {"time_ms": 1750, "servo": 2}
+      ]
+    }
+  }
+}
