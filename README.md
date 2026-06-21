@@ -7,10 +7,11 @@ and a Python keyboard controller.
 
 Manual keyboard control:
 
-- `A` hits servo channel 0
-- `S` hits servo channel 1
-- `D` hits servo channel 2
-- `F` hits servo channel 3
+- `A` hits servo channel 0 (cymbal)
+- `S` hits servo channel 1 (small tom 1)
+- `D` hits servo channel 2 (big drum)
+- `F` hits servo channel 3 (small tom 2)
+- `G` hits servo channel 4 (high-hat)
 - `R` returns all servos to rest
 - `?` prints firmware status
 - `Q` quits the Python controller

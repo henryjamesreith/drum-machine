@@ -3,7 +3,7 @@
   "beats": {
     "simple_test": {
       "name": "Simple hardware test",
-      "length_ms": 2000,
+      "length_ms": 2500,
       "events": [
         {"time_ms": 0, "servo": 0},
         {"time_ms": 250, "servo": 1},
@@ -12,7 +12,8 @@
         {"time_ms": 1000, "servo": 0},
         {"time_ms": 1250, "servo": 1},
         {"time_ms": 1500, "servo": 2},
-        {"time_ms": 1750, "servo": 3}
+        {"time_ms": 1750, "servo": 3},
+        {"time_ms": 2000, "servo": 4}
       ]
     },
     "basic_rock": {
@@ -31,6 +32,24 @@
         {"time_ms": 1500, "servo": 0},
         {"time_ms": 1500, "servo": 1},
         {"time_ms": 1750, "servo": 0}
+      ]
+    },
+    "high_hat_rock": {
+      "name": "High-hat rock groove",
+      "length_ms": 2000,
+      "events": [
+        {"time_ms": 0, "servo": 0},
+        {"time_ms": 0, "servo": 2},
+        {"time_ms": 250, "servo": 4},
+        {"time_ms": 500, "servo": 4},
+        {"time_ms": 500, "servo": 1},
+        {"time_ms": 750, "servo": 4},
+        {"time_ms": 1000, "servo": 4},
+        {"time_ms": 1000, "servo": 2},
+        {"time_ms": 1250, "servo": 4},
+        {"time_ms": 1500, "servo": 4},
+        {"time_ms": 1500, "servo": 1},
+        {"time_ms": 1750, "servo": 4}
       ]
     },
     "alternating_toms": {

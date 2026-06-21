@@ -17,7 +17,7 @@
       "key": "a",
       "return_angle": 90,
       "strike_angle": 60,
-      "dwell_ms": 200,
+      "dwell_ms": 100,
       "step_delay_ms": 0
     },
     "1": {
@@ -39,6 +39,14 @@
     "3": {
       "name": "small_tom_2",
       "key": "f",
+      "return_angle": 90,
+      "strike_angle": 60,
+      "dwell_ms": 100,
+      "step_delay_ms": 0
+    },
+    "4": {
+      "name": "hi_hat",
+      "key": "g",
       "return_angle": 90,
       "strike_angle": 60,
       "dwell_ms": 100,
