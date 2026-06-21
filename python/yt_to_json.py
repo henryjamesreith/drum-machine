@@ -5,19 +5,20 @@ yt_to_json.py — YouTube music video → drum kit firmware JSON + MIDI
 Pipeline:
   YouTube URL
     → WAV           (yt-dlp + ffmpeg)
-    → drum stem     (Spleeter 4-stems)
+    → drum stem     (Demucs htdemucs, GPU-accelerated on CUDA)
     → onset events  (librosa, per frequency band)
     → quantized events
     → <beat_key>.mid    [always written for inspection]
     → <beat_key>.json   [firmware input]
 
-System requirements: ffmpeg, Python 3.8–3.10 (Spleeter constraint)
+System requirements: ffmpeg
 """
 
 import argparse
 import json
 import re
 import subprocess
+import sys
 import tempfile
 from itertools import groupby
 from pathlib import Path
@@ -27,7 +28,6 @@ import mido
 import numpy as np
 import soundfile as sf
 from scipy.signal import butter, sosfilt
-from spleeter.separator import Separator
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Configuration — all prototype-tunable knobs live here
@@ -105,7 +105,7 @@ def detect_onsets(audio: np.ndarray, sr: int) -> np.ndarray:
 def get_video_title(url: str) -> str:
     """Fetch the YouTube video title and return a filesystem-safe slug."""
     result = subprocess.run(
-        ["yt-dlp", "--no-playlist", "--get-title", url],
+        [sys.executable, "-m", "yt_dlp", "--no-playlist", "--get-title", url],
         capture_output=True, text=True, check=True,
     )
     title = result.stdout.strip()
@@ -116,7 +116,7 @@ def download_audio(url: str, out_wav: Path) -> None:
     """Download the YouTube audio track as a WAV file via yt-dlp + ffmpeg."""
     subprocess.run(
         [
-            "yt-dlp",
+            sys.executable, "-m", "yt_dlp",
             "--no-playlist",
             "-x", "--audio-format", "wav",
             "-o", str(out_wav),
@@ -128,26 +128,23 @@ def download_audio(url: str, out_wav: Path) -> None:
 
 def isolate_drums(wav_path: Path, output_dir: Path) -> Path:
     """
-    Separate the drum stem using Spleeter 4-stems.
+    Separate the drum stem using Demucs (htdemucs model).
+    Auto-detects CUDA (NVIDIA 3090) and falls back to CPU (Intel Mac).
     Returns the path to the isolated drums.wav.
 
-    UPGRADE PATH → Demucs (better quality, GPU-accelerated, actively maintained):
-      Install: pip install demucs
-      Demucs auto-detects CUDA (NVIDIA 3090) and falls back to CPU (Intel Mac).
-      Replace this function body with:
-
-        subprocess.run([
-            "python", "-m", "demucs",
+    To use the higher-quality fine-tuned model (slower), change "htdemucs" → "htdemucs_ft".
+    """
+    subprocess.run(
+        [
+            sys.executable, "-m", "demucs",
             "--two-stems=drums",
             "--name", "htdemucs",
             "--out", str(output_dir),
             str(wav_path),
-        ], check=True)
-        return output_dir / "htdemucs" / wav_path.stem / "drums.wav"
-    """
-    separator = Separator("spleeter:4stems")
-    separator.separate_to_file(str(wav_path), str(output_dir))
-    return output_dir / wav_path.stem / "drums.wav"
+        ],
+        check=True,
+    )
+    return output_dir / "htdemucs" / wav_path.stem / "drums.wav"
 
 
 def extract_events(drums_wav: Path) -> list[tuple[float, str]]:
@@ -278,7 +275,7 @@ def main() -> None:
         wav_path = tmp_path / "source.wav"
         download_audio(args.url, wav_path)
 
-        print("[3/5] Isolating drum stem (Spleeter)...")
+        print("[3/5] Isolating drum stem (Demucs)...")
         stems_dir = tmp_path / "stems"
         drums_wav = isolate_drums(wav_path, stems_dir)
         duration_s = sf.info(str(drums_wav)).duration

@@ -2,10 +2,10 @@
 pyserial>=3.5
 
 # YouTube → drum JSON pipeline (yt_to_json.py)
-# Python 3.8–3.10 required (Spleeter constraint)
 # System dependency: ffmpeg must be on PATH
 yt-dlp
-spleeter
+demucs          # drum stem separation; auto-uses CUDA on Linux, CPU on Mac
+torchcodec      # required by torchaudio >= 2.11 for audio file saving
 librosa
 mido
 soundfile
