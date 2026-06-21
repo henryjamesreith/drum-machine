@@ -4,6 +4,7 @@
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40);
 
 const int SERVO_COUNT = 16;
+const int ACTIVE_SERVO_COUNT = 5;
 const int DEFAULT_RETURN_ANGLE = 90;
 const int DEFAULT_STRIKE_ANGLE = 35;
 const int DEFAULT_DWELL_MS = 10;
@@ -236,7 +237,7 @@ void handleCommand(String line) {
   if (command == "STATUS") {
     String servoToken = nextToken(line);
     if (servoToken.length() == 0) {
-      for (int servo = 0; servo < 4; servo++) {
+      for (int servo = 0; servo < ACTIVE_SERVO_COUNT; servo++) {
         printServoStatus(servo);
       }
     } else {
