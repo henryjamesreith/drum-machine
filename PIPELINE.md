@@ -78,12 +78,12 @@ All prototype-tunable knobs are constants at the top of `python/yt_to_json.py`.
 ### Servo mapping
 ```python
 DRUM_TO_SERVO: dict[str, int] = {
-    "cymbal":      0,
-    "small_tom_1": 1,
-    "big_drum":    2,
-    "small_tom_2": 3,
-    "hi_hat":      4,
-    "snare":       5,
+    "cymbal":       0,
+    "big_tom":      1,
+    "little_tom_1": 2,
+    "little_tom_2": 3,
+    "hi_hat":       4,
+    "snare":        5,
 }
 ```
 Edit this to match physical wiring changes. Any drum type not listed here is silently ignored in output.
@@ -91,17 +91,17 @@ Edit this to match physical wiring changes. Any drum type not listed here is sil
 ### Frequency bands
 ```python
 FREQ_BANDS: dict[str, tuple[int, int]] = {
-    "big_drum":    (20,    200),
-    "small_tom_1": (150,   400),
-    "small_tom_2": (300,   700),
-    "snare":       (500,   3000),
-    "cymbal":      (3000,  8000),
-    "hi_hat":      (7000,  20000),
+    "big_tom":      (20,    200),
+    "little_tom_1": (150,   400),
+    "little_tom_2": (300,   700),
+    "snare":        (500,   3000),
+    "cymbal":       (3000,  8000),
+    "hi_hat":       (7000,  20000),
 }
 ```
 Onset detection runs independently in each band. A single physical drum hit will fire in every band whose frequency range overlaps with it — this is expected and is the classification mechanism.
 
-**Known limitation:** `small_tom_1` and `small_tom_2` share overlapping frequency ranges and cannot be cleanly separated by frequency alone. Both may trigger on the same tom hit. See upgrade path below.
+**Known limitation:** `little_tom_1` and `little_tom_2` share overlapping frequency ranges and cannot be cleanly separated by frequency alone. Both may trigger on the same tom hit.
 
 ### Quantization
 ```python
@@ -136,7 +136,7 @@ Only affects the `.mid` side-output, not the JSON. Change if you want the MIDI t
       "name": "Song Title Slug",
       "length_ms": 210000,
       "events": [
-        {"time_ms": 0,   "servo": 2},
+        {"time_ms": 0,   "servo": 1},
         {"time_ms": 125, "servo": 4},
         ...
       ]

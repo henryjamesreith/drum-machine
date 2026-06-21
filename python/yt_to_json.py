@@ -38,26 +38,26 @@ from scipy.signal import butter, sosfilt
 
 # Physical servo wiring: drum name → servo index on the kit.
 DRUM_TO_SERVO: dict[str, int] = {
-    "cymbal":      0,
-    "small_tom_1": 1,
-    "big_drum":    2,
-    "small_tom_2": 3,
-    "hi_hat":      4,
-    "snare":       5,
+    "cymbal":       0,
+    "big_tom":      1,
+    "little_tom_1": 2,
+    "little_tom_2": 3,
+    "hi_hat":       4,
+    "snare":        5,
 }
 
 # Frequency bands (Hz) used to classify hits in the isolated drum stem.
 # Onset detection runs independently in each band.
-# Note: small_tom_1 / small_tom_2 share overlapping ranges — they cannot be
+# Note: little_tom_1 / little_tom_2 share overlapping ranges — they cannot be
 # cleanly separated by frequency alone at this stage. Upgrade path: swap
 # bandpass + onset detection for a trained drum transcription model (e.g. ADTLib).
 FREQ_BANDS: dict[str, tuple[int, int]] = {
-    "big_drum":    (20,    200),
-    "small_tom_1": (150,   400),
-    "small_tom_2": (300,   700),
-    "snare":       (500,   3000),
-    "cymbal":      (3000,  8000),
-    "hi_hat":      (7000,  20000),
+    "big_tom":      (20,    200),
+    "little_tom_1": (150,   400),
+    "little_tom_2": (300,   700),
+    "snare":        (500,   3000),
+    "cymbal":       (3000,  8000),
+    "hi_hat":       (7000,  20000),
 }
 
 # Onset sensitivity — lower detects more (quieter) hits; raise to cut false positives.
@@ -70,13 +70,13 @@ QUANTIZE_MS: int = 125
 MIDI_BPM: int = 120
 
 # GM drum channel note numbers for the .mid side-output (channel 10 / index 9).
-DRUM_MIDI_NOTES: dict[str, int] = {
-    "big_drum":    36,  # Bass Drum 1
-    "snare":       38,  # Acoustic Snare
-    "hi_hat":      42,  # Closed Hi-Hat
-    "cymbal":      49,  # Crash Cymbal 1
-    "small_tom_1": 47,  # Low-Mid Tom
-    "small_tom_2": 45,  # Low Tom
+SERVO_MIDI_NOTES: dict[int, int] = {
+    0: 49,  # Crash Cymbal 1
+    1: 45,  # Low Tom
+    2: 47,  # Low-Mid Tom
+    3: 50,  # High Tom
+    4: 42,  # Closed Hi-Hat
+    5: 38,  # Acoustic Snare
 }
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -204,8 +204,6 @@ def write_midi(events: list[dict], out_path: Path) -> None:
     mid.tracks.append(track)
     track.append(mido.MetaMessage("set_tempo", tempo=tempo, time=0))
 
-    servo_to_drum = {v: k for k, v in DRUM_TO_SERVO.items()}
-
     def ms_to_ticks(ms: int) -> int:
         return int((ms / 1000.0) * (MIDI_BPM / 60.0) * ticks_per_beat)
 
@@ -217,16 +215,14 @@ def write_midi(events: list[dict], out_path: Path) -> None:
 
         # note_on for all simultaneous hits; first gets the real delta, rest get 0
         for i, ev in enumerate(hits):
-            drum_type = servo_to_drum.get(ev["servo"])
-            note = DRUM_MIDI_NOTES.get(drum_type, 38) if drum_type else 38
+            note = SERVO_MIDI_NOTES.get(ev["servo"], 38)
             track.append(mido.Message(
                 "note_on", channel=9, note=note, velocity=100, time=delta if i == 0 else 0
             ))
 
         # note_off immediately after (drums are effectively instantaneous)
         for i, ev in enumerate(hits):
-            drum_type = servo_to_drum.get(ev["servo"])
-            note = DRUM_MIDI_NOTES.get(drum_type, 38) if drum_type else 38
+            note = SERVO_MIDI_NOTES.get(ev["servo"], 38)
             track.append(mido.Message(
                 "note_off", channel=9, note=note, velocity=0, time=1 if i == 0 else 0
             ))
