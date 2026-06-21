@@ -1,1 +1,13 @@
+# Serial communication (play_pattern.py, tune_servos.py, manual_keyboard.py)
 pyserial>=3.5
+
+# YouTube → drum JSON pipeline (yt_to_json.py)
+# Python 3.8–3.10 required (Spleeter constraint)
+# System dependency: ffmpeg must be on PATH
+yt-dlp
+spleeter
+librosa
+mido
+soundfile
+scipy
+numpy
