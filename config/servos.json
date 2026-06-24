@@ -21,7 +21,7 @@
       "step_delay_ms": 0
     },
     "1": {
-      "name": "big_tom",
+      "name": "small_tom",
       "key": "s",
       "return_angle": 90,
       "strike_angle": 60,
@@ -29,7 +29,7 @@
       "step_delay_ms": 0
     },
     "2": {
-      "name": "little_tom_1",
+      "name": "big_tom_kick",
       "key": "d",
       "return_angle": 90,
       "strike_angle": 60,
@@ -37,7 +37,7 @@
       "step_delay_ms": 0
     },
     "3": {
-      "name": "little_tom_2",
+      "name": "small_tom_snare",
       "key": "f",
       "return_angle": 90,
       "strike_angle": 60,
@@ -47,14 +47,6 @@
     "4": {
       "name": "hi_hat",
       "key": "g",
-      "return_angle": 90,
-      "strike_angle": 60,
-      "dwell_ms": 100,
-      "step_delay_ms": 0
-    },
-    "5": {
-      "name": "snare",
-      "key": "h",
       "return_angle": 90,
       "strike_angle": 60,
       "dwell_ms": 100,

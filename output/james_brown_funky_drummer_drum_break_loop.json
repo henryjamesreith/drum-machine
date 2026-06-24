@@ -26,16 +26,12 @@
           "servo": 4
         },
         {
-          "time_ms": 5250,
-          "servo": 5
-        },
-        {
           "time_ms": 5375,
           "servo": 0
         },
         {
           "time_ms": 5375,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 5375,
@@ -62,16 +58,12 @@
           "servo": 4
         },
         {
-          "time_ms": 5500,
-          "servo": 5
-        },
-        {
           "time_ms": 5750,
           "servo": 0
         },
         {
           "time_ms": 5750,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 5750,
@@ -80,10 +72,6 @@
         {
           "time_ms": 5750,
           "servo": 4
-        },
-        {
-          "time_ms": 5750,
-          "servo": 5
         },
         {
           "time_ms": 5875,
@@ -106,10 +94,6 @@
           "servo": 4
         },
         {
-          "time_ms": 5875,
-          "servo": 5
-        },
-        {
           "time_ms": 6000,
           "servo": 0
         },
@@ -120,14 +104,10 @@
         {
           "time_ms": 6000,
           "servo": 4
-        },
-        {
-          "time_ms": 6000,
-          "servo": 5
         },
         {
           "time_ms": 6125,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 6125,
@@ -139,7 +119,7 @@
         },
         {
           "time_ms": 6250,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 6250,
@@ -148,10 +128,6 @@
         {
           "time_ms": 6250,
           "servo": 4
-        },
-        {
-          "time_ms": 6250,
-          "servo": 5
         },
         {
           "time_ms": 6375,
@@ -164,10 +140,6 @@
         {
           "time_ms": 6375,
           "servo": 3
-        },
-        {
-          "time_ms": 6375,
-          "servo": 5
         },
         {
           "time_ms": 6500,
@@ -190,10 +162,6 @@
           "servo": 4
         },
         {
-          "time_ms": 6500,
-          "servo": 5
-        },
-        {
           "time_ms": 6625,
           "servo": 0
         },
@@ -214,10 +182,6 @@
           "servo": 4
         },
         {
-          "time_ms": 6625,
-          "servo": 5
-        },
-        {
           "time_ms": 6750,
           "servo": 0
         },
@@ -236,18 +200,14 @@
         {
           "time_ms": 6750,
           "servo": 4
-        },
-        {
-          "time_ms": 6750,
-          "servo": 5
         },
         {
           "time_ms": 6875,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 6875,
-          "servo": 5
+          "servo": 3
         },
         {
           "time_ms": 7000,
@@ -255,7 +215,7 @@
         },
         {
           "time_ms": 7000,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 7000,
@@ -264,10 +224,6 @@
         {
           "time_ms": 7000,
           "servo": 4
-        },
-        {
-          "time_ms": 7000,
-          "servo": 5
         },
         {
           "time_ms": 7125,
@@ -302,10 +258,6 @@
           "servo": 4
         },
         {
-          "time_ms": 7250,
-          "servo": 5
-        },
-        {
           "time_ms": 7375,
           "servo": 0
         },
@@ -324,10 +276,6 @@
         {
           "time_ms": 7375,
           "servo": 4
-        },
-        {
-          "time_ms": 7375,
-          "servo": 5
         },
         {
           "time_ms": 7500,
@@ -350,10 +298,6 @@
           "servo": 4
         },
         {
-          "time_ms": 7500,
-          "servo": 5
-        },
-        {
           "time_ms": 7625,
           "servo": 0
         },
@@ -372,10 +316,6 @@
         {
           "time_ms": 7625,
           "servo": 4
-        },
-        {
-          "time_ms": 7625,
-          "servo": 5
         },
         {
           "time_ms": 7875,
@@ -390,10 +330,6 @@
           "servo": 4
         },
         {
-          "time_ms": 7875,
-          "servo": 5
-        },
-        {
           "time_ms": 8000,
           "servo": 0
         },
@@ -414,16 +350,12 @@
           "servo": 4
         },
         {
-          "time_ms": 8000,
-          "servo": 5
-        },
-        {
           "time_ms": 8125,
           "servo": 0
         },
         {
           "time_ms": 8125,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 8125,
@@ -432,10 +364,6 @@
         {
           "time_ms": 8125,
           "servo": 4
-        },
-        {
-          "time_ms": 8125,
-          "servo": 5
         },
         {
           "time_ms": 8250,
@@ -456,10 +384,6 @@
         {
           "time_ms": 8250,
           "servo": 4
-        },
-        {
-          "time_ms": 8250,
-          "servo": 5
         },
         {
           "time_ms": 8375,
@@ -479,7 +403,7 @@
         },
         {
           "time_ms": 8500,
-          "servo": 5
+          "servo": 3
         },
         {
           "time_ms": 8625,
@@ -492,10 +416,6 @@
         {
           "time_ms": 8625,
           "servo": 4
-        },
-        {
-          "time_ms": 8625,
-          "servo": 5
         },
         {
           "time_ms": 8750,
@@ -518,10 +438,6 @@
           "servo": 4
         },
         {
-          "time_ms": 8750,
-          "servo": 5
-        },
-        {
           "time_ms": 8875,
           "servo": 0
         },
@@ -540,10 +456,6 @@
         {
           "time_ms": 8875,
           "servo": 4
-        },
-        {
-          "time_ms": 8875,
-          "servo": 5
         },
         {
           "time_ms": 9000,
@@ -566,16 +478,12 @@
           "servo": 4
         },
         {
-          "time_ms": 9000,
-          "servo": 5
-        },
-        {
           "time_ms": 9125,
           "servo": 0
         },
         {
           "time_ms": 9125,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 9125,
@@ -584,14 +492,10 @@
         {
           "time_ms": 9125,
           "servo": 4
-        },
-        {
-          "time_ms": 9125,
-          "servo": 5
         },
         {
           "time_ms": 9250,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 9250,
@@ -614,10 +518,6 @@
           "servo": 3
         },
         {
-          "time_ms": 9375,
-          "servo": 5
-        },
-        {
           "time_ms": 9500,
           "servo": 0
         },
@@ -636,10 +536,6 @@
         {
           "time_ms": 9500,
           "servo": 4
-        },
-        {
-          "time_ms": 9500,
-          "servo": 5
         },
         {
           "time_ms": 9625,
@@ -662,10 +558,6 @@
           "servo": 4
         },
         {
-          "time_ms": 9625,
-          "servo": 5
-        },
-        {
           "time_ms": 9750,
           "servo": 0
         },
@@ -686,20 +578,12 @@
           "servo": 4
         },
         {
-          "time_ms": 9750,
-          "servo": 5
-        },
-        {
           "time_ms": 9875,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 9875,
           "servo": 3
-        },
-        {
-          "time_ms": 9875,
-          "servo": 5
         },
         {
           "time_ms": 10000,
@@ -707,7 +591,7 @@
         },
         {
           "time_ms": 10000,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 10000,
@@ -715,23 +599,19 @@
         },
         {
           "time_ms": 10125,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 10125,
           "servo": 3
         },
         {
-          "time_ms": 10125,
-          "servo": 5
-        },
-        {
           "time_ms": 10250,
           "servo": 0
         },
         {
           "time_ms": 10250,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 10250,
@@ -740,10 +620,6 @@
         {
           "time_ms": 10250,
           "servo": 4
-        },
-        {
-          "time_ms": 10250,
-          "servo": 5
         },
         {
           "time_ms": 10375,
@@ -764,10 +640,6 @@
         {
           "time_ms": 10375,
           "servo": 4
-        },
-        {
-          "time_ms": 10375,
-          "servo": 5
         },
         {
           "time_ms": 10500,
@@ -782,10 +654,6 @@
           "servo": 4
         },
         {
-          "time_ms": 10500,
-          "servo": 5
-        },
-        {
           "time_ms": 10625,
           "servo": 0
         },
@@ -804,10 +672,6 @@
         {
           "time_ms": 10625,
           "servo": 4
-        },
-        {
-          "time_ms": 10625,
-          "servo": 5
         },
         {
           "time_ms": 10875,
@@ -822,10 +686,6 @@
           "servo": 4
         },
         {
-          "time_ms": 10875,
-          "servo": 5
-        },
-        {
           "time_ms": 11000,
           "servo": 0
         },
@@ -844,10 +704,6 @@
         {
           "time_ms": 11000,
           "servo": 4
-        },
-        {
-          "time_ms": 11000,
-          "servo": 5
         },
         {
           "time_ms": 11125,
@@ -870,10 +726,6 @@
           "servo": 4
         },
         {
-          "time_ms": 11125,
-          "servo": 5
-        },
-        {
           "time_ms": 11250,
           "servo": 0
         },
@@ -894,10 +746,6 @@
           "servo": 4
         },
         {
-          "time_ms": 11250,
-          "servo": 5
-        },
-        {
           "time_ms": 11375,
           "servo": 0
         },
@@ -916,10 +764,6 @@
         {
           "time_ms": 11375,
           "servo": 4
-        },
-        {
-          "time_ms": 11375,
-          "servo": 5
         },
         {
           "time_ms": 11500,
@@ -942,10 +786,6 @@
           "servo": 4
         },
         {
-          "time_ms": 11625,
-          "servo": 5
-        },
-        {
           "time_ms": 11750,
           "servo": 0
         },
@@ -964,10 +804,6 @@
         {
           "time_ms": 11750,
           "servo": 4
-        },
-        {
-          "time_ms": 11750,
-          "servo": 5
         },
         {
           "time_ms": 11875,
@@ -990,10 +826,6 @@
           "servo": 4
         },
         {
-          "time_ms": 11875,
-          "servo": 5
-        },
-        {
           "time_ms": 12000,
           "servo": 0
         },
@@ -1014,52 +846,40 @@
           "servo": 4
         },
         {
-          "time_ms": 12000,
-          "servo": 5
-        },
-        {
           "time_ms": 12125,
           "servo": 0
         },
         {
           "time_ms": 12125,
-          "servo": 1
-        },
-        {
-          "time_ms": 12125,
-          "servo": 3
-        },
-        {
-          "time_ms": 12125,
-          "servo": 4
-        },
-        {
-          "time_ms": 12125,
-          "servo": 5
-        },
-        {
-          "time_ms": 12250,
-          "servo": 0
-        },
-        {
-          "time_ms": 12250,
           "servo": 2
         },
         {
+          "time_ms": 12125,
+          "servo": 3
+        },
+        {
+          "time_ms": 12125,
+          "servo": 4
+        },
+        {
+          "time_ms": 12250,
+          "servo": 0
+        },
+        {
+          "time_ms": 12250,
+          "servo": 1
+        },
+        {
           "time_ms": 12250,
           "servo": 3
         },
         {
           "time_ms": 12250,
           "servo": 4
-        },
-        {
-          "time_ms": 12250,
-          "servo": 5
         },
         {
           "time_ms": 12375,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 12375,
@@ -1071,17 +891,17 @@
         },
         {
           "time_ms": 12500,
-          "servo": 2
+          "servo": 1
+        },
+        {
+          "time_ms": 12500,
+          "servo": 3
         },
         {
           "time_ms": 12500,
           "servo": 4
         },
         {
-          "time_ms": 12500,
-          "servo": 5
-        },
-        {
           "time_ms": 12625,
           "servo": 0
         },
@@ -1092,10 +912,6 @@
         {
           "time_ms": 12625,
           "servo": 4
-        },
-        {
-          "time_ms": 12625,
-          "servo": 5
         },
         {
           "time_ms": 12750,
@@ -1118,10 +934,6 @@
           "servo": 4
         },
         {
-          "time_ms": 12750,
-          "servo": 5
-        },
-        {
           "time_ms": 12875,
           "servo": 0
         },
@@ -1134,22 +946,14 @@
           "servo": 4
         },
         {
-          "time_ms": 12875,
-          "servo": 5
-        },
-        {
           "time_ms": 13000,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 13000,
           "servo": 3
         },
         {
-          "time_ms": 13000,
-          "servo": 5
-        },
-        {
           "time_ms": 13125,
           "servo": 0
         },
@@ -1178,10 +982,6 @@
           "servo": 4
         },
         {
-          "time_ms": 13250,
-          "servo": 5
-        },
-        {
           "time_ms": 13375,
           "servo": 0
         },
@@ -1200,10 +1000,6 @@
         {
           "time_ms": 13375,
           "servo": 4
-        },
-        {
-          "time_ms": 13375,
-          "servo": 5
         },
         {
           "time_ms": 13500,
@@ -1226,16 +1022,12 @@
           "servo": 4
         },
         {
-          "time_ms": 13500,
-          "servo": 5
-        },
-        {
           "time_ms": 13625,
           "servo": 0
         },
         {
           "time_ms": 13625,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 13625,
@@ -1244,10 +1036,6 @@
         {
           "time_ms": 13625,
           "servo": 4
-        },
-        {
-          "time_ms": 13625,
-          "servo": 5
         },
         {
           "time_ms": 13750,
@@ -1255,7 +1043,7 @@
         },
         {
           "time_ms": 13750,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 13875,
@@ -1272,10 +1060,6 @@
         {
           "time_ms": 13875,
           "servo": 4
-        },
-        {
-          "time_ms": 13875,
-          "servo": 5
         },
         {
           "time_ms": 14000,
@@ -1298,10 +1082,6 @@
           "servo": 4
         },
         {
-          "time_ms": 14000,
-          "servo": 5
-        },
-        {
           "time_ms": 14125,
           "servo": 0
         },
@@ -1322,10 +1102,6 @@
           "servo": 4
         },
         {
-          "time_ms": 14125,
-          "servo": 5
-        },
-        {
           "time_ms": 14250,
           "servo": 0
         },
@@ -1344,14 +1120,10 @@
         {
           "time_ms": 14250,
           "servo": 4
-        },
-        {
-          "time_ms": 14250,
-          "servo": 5
         },
         {
           "time_ms": 14375,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 14375,
@@ -1363,7 +1135,7 @@
         },
         {
           "time_ms": 14500,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 14500,
@@ -1372,10 +1144,6 @@
         {
           "time_ms": 14500,
           "servo": 4
-        },
-        {
-          "time_ms": 14500,
-          "servo": 5
         },
         {
           "time_ms": 14625,
@@ -1406,10 +1174,6 @@
           "servo": 4
         },
         {
-          "time_ms": 14750,
-          "servo": 5
-        },
-        {
           "time_ms": 14875,
           "servo": 0
         },
@@ -1430,16 +1194,12 @@
           "servo": 4
         },
         {
-          "time_ms": 14875,
-          "servo": 5
-        },
-        {
           "time_ms": 15000,
           "servo": 0
         },
         {
           "time_ms": 15000,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 15000,
@@ -1448,10 +1208,6 @@
         {
           "time_ms": 15000,
           "servo": 4
-        },
-        {
-          "time_ms": 15000,
-          "servo": 5
         },
         {
           "time_ms": 15125,
@@ -1472,10 +1228,6 @@
         {
           "time_ms": 15125,
           "servo": 4
-        },
-        {
-          "time_ms": 15125,
-          "servo": 5
         },
         {
           "time_ms": 15250,
@@ -1487,17 +1239,13 @@
         },
         {
           "time_ms": 15375,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 15375,
           "servo": 3
         },
         {
-          "time_ms": 15375,
-          "servo": 5
-        },
-        {
           "time_ms": 15500,
           "servo": 0
         },
@@ -1518,20 +1266,16 @@
           "servo": 4
         },
         {
-          "time_ms": 15500,
-          "servo": 5
-        },
-        {
           "time_ms": 15625,
           "servo": 0
         },
         {
           "time_ms": 15625,
-          "servo": 4
+          "servo": 3
         },
         {
           "time_ms": 15625,
-          "servo": 5
+          "servo": 4
         },
         {
           "time_ms": 15750,
@@ -1554,10 +1298,6 @@
           "servo": 4
         },
         {
-          "time_ms": 15750,
-          "servo": 5
-        },
-        {
           "time_ms": 15875,
           "servo": 1
         },
@@ -1568,10 +1308,6 @@
         {
           "time_ms": 15875,
           "servo": 3
-        },
-        {
-          "time_ms": 15875,
-          "servo": 5
         },
         {
           "time_ms": 16000,
@@ -1602,10 +1338,6 @@
           "servo": 4
         },
         {
-          "time_ms": 16125,
-          "servo": 5
-        },
-        {
           "time_ms": 16250,
           "servo": 0
         },
@@ -1624,10 +1356,6 @@
         {
           "time_ms": 16250,
           "servo": 4
-        },
-        {
-          "time_ms": 16250,
-          "servo": 5
         },
         {
           "time_ms": 16375,
@@ -1650,10 +1378,6 @@
           "servo": 4
         },
         {
-          "time_ms": 16375,
-          "servo": 5
-        },
-        {
           "time_ms": 16500,
           "servo": 0
         },
@@ -1674,10 +1398,6 @@
           "servo": 4
         },
         {
-          "time_ms": 16500,
-          "servo": 5
-        },
-        {
           "time_ms": 16625,
           "servo": 0
         },
@@ -1696,10 +1416,6 @@
         {
           "time_ms": 16625,
           "servo": 4
-        },
-        {
-          "time_ms": 16625,
-          "servo": 5
         },
         {
           "time_ms": 16750,
@@ -1722,10 +1438,6 @@
           "servo": 3
         },
         {
-          "time_ms": 16875,
-          "servo": 5
-        },
-        {
           "time_ms": 17000,
           "servo": 0
         },
@@ -1744,10 +1456,6 @@
         {
           "time_ms": 17000,
           "servo": 4
-        },
-        {
-          "time_ms": 17000,
-          "servo": 5
         },
         {
           "time_ms": 17125,
@@ -1770,10 +1478,6 @@
           "servo": 4
         },
         {
-          "time_ms": 17125,
-          "servo": 5
-        },
-        {
           "time_ms": 17250,
           "servo": 0
         },
@@ -1794,10 +1498,6 @@
           "servo": 4
         },
         {
-          "time_ms": 17250,
-          "servo": 5
-        },
-        {
           "time_ms": 17375,
           "servo": 0
         },
@@ -1808,14 +1508,10 @@
         {
           "time_ms": 17375,
           "servo": 4
-        },
-        {
-          "time_ms": 17375,
-          "servo": 5
         },
         {
           "time_ms": 17500,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 17500,
@@ -1827,17 +1523,13 @@
         },
         {
           "time_ms": 17625,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 17625,
           "servo": 3
         },
         {
-          "time_ms": 17625,
-          "servo": 5
-        },
-        {
           "time_ms": 17750,
           "servo": 0
         },
@@ -1848,10 +1540,6 @@
         {
           "time_ms": 17750,
           "servo": 4
-        },
-        {
-          "time_ms": 17750,
-          "servo": 5
         },
         {
           "time_ms": 17875,
@@ -1874,44 +1562,40 @@
           "servo": 4
         },
         {
-          "time_ms": 17875,
-          "servo": 5
-        },
-        {
           "time_ms": 18000,
           "servo": 0
         },
         {
           "time_ms": 18000,
-          "servo": 1
-        },
-        {
-          "time_ms": 18000,
-          "servo": 4
-        },
-        {
-          "time_ms": 18000,
-          "servo": 5
-        },
-        {
-          "time_ms": 18125,
-          "servo": 0
-        },
-        {
-          "time_ms": 18125,
-          "servo": 1
-        },
-        {
-          "time_ms": 18125,
-          "servo": 4
-        },
-        {
-          "time_ms": 18250,
-          "servo": 0
-        },
-        {
-          "time_ms": 18250,
           "servo": 2
+        },
+        {
+          "time_ms": 18000,
+          "servo": 3
+        },
+        {
+          "time_ms": 18000,
+          "servo": 4
+        },
+        {
+          "time_ms": 18125,
+          "servo": 0
+        },
+        {
+          "time_ms": 18125,
+          "servo": 2
+        },
+        {
+          "time_ms": 18125,
+          "servo": 4
+        },
+        {
+          "time_ms": 18250,
+          "servo": 0
+        },
+        {
+          "time_ms": 18250,
+          "servo": 1
         },
         {
           "time_ms": 18250,
@@ -1920,10 +1604,6 @@
         {
           "time_ms": 18250,
           "servo": 4
-        },
-        {
-          "time_ms": 18250,
-          "servo": 5
         },
         {
           "time_ms": 18375,
@@ -1958,10 +1638,6 @@
           "servo": 4
         },
         {
-          "time_ms": 18500,
-          "servo": 5
-        },
-        {
           "time_ms": 18625,
           "servo": 0
         },
@@ -1976,10 +1652,6 @@
         {
           "time_ms": 18625,
           "servo": 3
-        },
-        {
-          "time_ms": 18625,
-          "servo": 5
         },
         {
           "time_ms": 18750,
@@ -2002,10 +1674,6 @@
           "servo": 4
         },
         {
-          "time_ms": 18750,
-          "servo": 5
-        },
-        {
           "time_ms": 18875,
           "servo": 0
         },
@@ -2024,10 +1692,6 @@
         {
           "time_ms": 18875,
           "servo": 4
-        },
-        {
-          "time_ms": 18875,
-          "servo": 5
         },
         {
           "time_ms": 19000,
@@ -2050,10 +1714,6 @@
           "servo": 3
         },
         {
-          "time_ms": 19125,
-          "servo": 5
-        },
-        {
           "time_ms": 19250,
           "servo": 0
         },
@@ -2072,10 +1732,6 @@
         {
           "time_ms": 19250,
           "servo": 4
-        },
-        {
-          "time_ms": 19250,
-          "servo": 5
         },
         {
           "time_ms": 19375,
@@ -2098,10 +1754,6 @@
           "servo": 4
         },
         {
-          "time_ms": 19375,
-          "servo": 5
-        },
-        {
           "time_ms": 19500,
           "servo": 0
         },
@@ -2122,10 +1774,6 @@
           "servo": 4
         },
         {
-          "time_ms": 19500,
-          "servo": 5
-        },
-        {
           "time_ms": 19625,
           "servo": 0
         },
@@ -2144,10 +1792,6 @@
         {
           "time_ms": 19625,
           "servo": 4
-        },
-        {
-          "time_ms": 19625,
-          "servo": 5
         },
         {
           "time_ms": 19750,
@@ -2155,11 +1799,11 @@
         },
         {
           "time_ms": 19750,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 19750,
-          "servo": 5
+          "servo": 3
         },
         {
           "time_ms": 19875,
@@ -2190,16 +1834,12 @@
           "servo": 4
         },
         {
-          "time_ms": 20000,
-          "servo": 5
-        },
-        {
           "time_ms": 20125,
           "servo": 0
         },
         {
           "time_ms": 20125,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 20125,
@@ -2208,10 +1848,6 @@
         {
           "time_ms": 20125,
           "servo": 4
-        },
-        {
-          "time_ms": 20125,
-          "servo": 5
         },
         {
           "time_ms": 20250,
@@ -2234,16 +1870,12 @@
           "servo": 4
         },
         {
-          "time_ms": 20250,
-          "servo": 5
-        },
-        {
           "time_ms": 20500,
           "servo": 0
         },
         {
           "time_ms": 20500,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 20500,
@@ -2254,16 +1886,12 @@
           "servo": 4
         },
         {
-          "time_ms": 20500,
-          "servo": 5
-        },
-        {
           "time_ms": 20625,
           "servo": 0
         },
         {
           "time_ms": 20625,
-          "servo": 2
+          "servo": 1
         },
         {
           "time_ms": 20625,
@@ -2290,10 +1918,6 @@
           "servo": 4
         },
         {
-          "time_ms": 20750,
-          "servo": 5
-        },
-        {
           "time_ms": 20875,
           "servo": 0
         },
@@ -2312,10 +1936,6 @@
         {
           "time_ms": 20875,
           "servo": 4
-        },
-        {
-          "time_ms": 20875,
-          "servo": 5
         },
         {
           "time_ms": 21000,
@@ -2338,10 +1958,6 @@
           "servo": 4
         },
         {
-          "time_ms": 21000,
-          "servo": 5
-        },
-        {
           "time_ms": 21125,
           "servo": 0
         },
@@ -2352,10 +1968,6 @@
         {
           "time_ms": 21125,
           "servo": 4
-        },
-        {
-          "time_ms": 21125,
-          "servo": 5
         },
         {
           "time_ms": 21250,
@@ -2386,10 +1998,6 @@
           "servo": 4
         },
         {
-          "time_ms": 21375,
-          "servo": 5
-        },
-        {
           "time_ms": 21500,
           "servo": 0
         },
@@ -2408,10 +2016,6 @@
         {
           "time_ms": 21500,
           "servo": 4
-        },
-        {
-          "time_ms": 21500,
-          "servo": 5
         },
         {
           "time_ms": 21625,
@@ -2434,10 +2038,6 @@
           "servo": 4
         },
         {
-          "time_ms": 21625,
-          "servo": 5
-        },
-        {
           "time_ms": 21750,
           "servo": 0
         },
@@ -2458,10 +2058,6 @@
           "servo": 4
         },
         {
-          "time_ms": 21750,
-          "servo": 5
-        },
-        {
           "time_ms": 21875,
           "servo": 0
         },
@@ -2475,11 +2071,11 @@
         },
         {
           "time_ms": 21875,
-          "servo": 4
+          "servo": 3
         },
         {
           "time_ms": 21875,
-          "servo": 5
+          "servo": 4
         },
         {
           "time_ms": 22000,
@@ -2492,10 +2088,6 @@
         {
           "time_ms": 22000,
           "servo": 3
-        },
-        {
-          "time_ms": 22000,
-          "servo": 5
         },
         {
           "time_ms": 22125,
@@ -2511,11 +2103,11 @@
         },
         {
           "time_ms": 22250,
-          "servo": 4
+          "servo": 3
         },
         {
           "time_ms": 22250,
-          "servo": 5
+          "servo": 4
         },
         {
           "time_ms": 22375,
@@ -2538,16 +2130,12 @@
           "servo": 4
         },
         {
-          "time_ms": 22375,
-          "servo": 5
-        },
-        {
           "time_ms": 22500,
           "servo": 0
         },
         {
           "time_ms": 22500,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 22500,
@@ -2556,10 +2144,6 @@
         {
           "time_ms": 22500,
           "servo": 4
-        },
-        {
-          "time_ms": 22500,
-          "servo": 5
         },
         {
           "time_ms": 22625,
@@ -2580,10 +2164,6 @@
         {
           "time_ms": 22625,
           "servo": 4
-        },
-        {
-          "time_ms": 22625,
-          "servo": 5
         },
         {
           "time_ms": 22875,
@@ -2591,11 +2171,11 @@
         },
         {
           "time_ms": 22875,
-          "servo": 4
+          "servo": 3
         },
         {
           "time_ms": 22875,
-          "servo": 5
+          "servo": 4
         },
         {
           "time_ms": 23000,
@@ -2618,10 +2198,6 @@
           "servo": 4
         },
         {
-          "time_ms": 23000,
-          "servo": 5
-        },
-        {
           "time_ms": 23125,
           "servo": 0
         },
@@ -2642,16 +2218,12 @@
           "servo": 4
         },
         {
-          "time_ms": 23125,
-          "servo": 5
-        },
-        {
           "time_ms": 23250,
           "servo": 0
         },
         {
           "time_ms": 23250,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 23250,
@@ -2660,10 +2232,6 @@
         {
           "time_ms": 23250,
           "servo": 4
-        },
-        {
-          "time_ms": 23250,
-          "servo": 5
         },
         {
           "time_ms": 23375,
@@ -2684,10 +2252,6 @@
         {
           "time_ms": 23375,
           "servo": 4
-        },
-        {
-          "time_ms": 23375,
-          "servo": 5
         },
         {
           "time_ms": 23500,
@@ -2696,10 +2260,6 @@
         {
           "time_ms": 23500,
           "servo": 3
-        },
-        {
-          "time_ms": 23500,
-          "servo": 5
         },
         {
           "time_ms": 23625,
@@ -2734,10 +2294,6 @@
           "servo": 4
         },
         {
-          "time_ms": 23750,
-          "servo": 5
-        },
-        {
           "time_ms": 23875,
           "servo": 0
         },
@@ -2778,10 +2334,6 @@
           "servo": 4
         },
         {
-          "time_ms": 24000,
-          "servo": 5
-        },
-        {
           "time_ms": 24125,
           "servo": 0
         },
@@ -2800,10 +2352,6 @@
         {
           "time_ms": 24125,
           "servo": 4
-        },
-        {
-          "time_ms": 24125,
-          "servo": 5
         },
         {
           "time_ms": 24250,
@@ -2826,24 +2374,16 @@
           "servo": 4
         },
         {
-          "time_ms": 24375,
-          "servo": 5
-        },
-        {
           "time_ms": 24500,
           "servo": 0
         },
         {
           "time_ms": 24500,
-          "servo": 1
+          "servo": 2
         },
         {
           "time_ms": 24500,
           "servo": 3
-        },
-        {
-          "time_ms": 24500,
-          "servo": 5
         }
       ]
     }

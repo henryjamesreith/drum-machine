@@ -79,14 +79,17 @@ All prototype-tunable knobs are constants at the top of `python/yt_to_json.py`.
 ```python
 DRUM_TO_SERVO: dict[str, int] = {
     "cymbal":       0,
-    "big_tom":      1,
-    "little_tom_1": 2,
+    "big_tom":      2,
+    "little_tom_1": 1,
     "little_tom_2": 3,
     "hi_hat":       4,
-    "snare":        5,
+    "snare":        3,
 }
 ```
-Edit this to match physical wiring changes. Any drum type not listed here is silently ignored in output.
+Channel 2 is the physical big tom used as the kick voice. Channel 3 is a
+physical small tom used as the snare voice. Both `little_tom_2` and detected
+`snare` events intentionally map to channel 3 and are deduplicated after
+quantization. Any drum type not listed here is silently ignored in output.
 
 ### Frequency bands
 ```python

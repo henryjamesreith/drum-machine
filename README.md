@@ -1,18 +1,17 @@
 # Robot Drummer
 
-Desktop robot drummer controlled by an Arduino Nano ESP32, a PCA9685 servo driver,
-and a Python keyboard controller.
+Five-servo desktop robot drummer controlled by an Arduino Nano ESP32, a PCA9685
+servo driver, and Python/web controllers.
 
 ## Current Milestone
 
 Manual keyboard control:
 
 - `A` hits servo channel 0 (cymbal)
-- `S` hits servo channel 1 (big tom)
-- `D` hits servo channel 2 (little tom 1)
-- `F` hits servo channel 3 (little tom 2)
-- `G` hits servo channel 4 (high-hat)
-- `H` hits servo channel 5 (snare)
+- `S` hits servo channel 1 (small tom)
+- `D` hits servo channel 2 (big tom, used as the kick drum)
+- `F` hits servo channel 3 (small tom, used as the snare drum)
+- `G` hits servo channel 4 (hi-hat)
 - `R` returns all servos to rest
 - `?` prints firmware status
 - `Q` quits the Python controller

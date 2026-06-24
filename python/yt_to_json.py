@@ -39,17 +39,18 @@ from scipy.signal import butter, sosfilt
 # Physical servo wiring: drum name → servo index on the kit.
 DRUM_TO_SERVO: dict[str, int] = {
     "cymbal":       0,
-    "big_tom":      1,
-    "little_tom_1": 2,
+    "big_tom":      2,
+    "little_tom_1": 1,
     "little_tom_2": 3,
     "hi_hat":       4,
-    "snare":        5,
+    "snare":        3,
 }
 
 # Frequency bands (Hz) used to classify hits in the isolated drum stem.
 # Onset detection runs independently in each band.
-# Note: little_tom_1 / little_tom_2 share overlapping ranges — they cannot be
-# cleanly separated by frequency alone at this stage. Upgrade path: swap
+# Note: little_tom_1 / little_tom_2 share overlapping ranges, and little_tom_2
+# intentionally shares physical channel 3 with snare. Duplicate channel hits at
+# one quantized timestamp are collapsed in build_event_list. Upgrade path: swap
 # bandpass + onset detection for a trained drum transcription model (e.g. ADTLib).
 FREQ_BANDS: dict[str, tuple[int, int]] = {
     "big_tom":      (20,    200),
@@ -72,11 +73,10 @@ MIDI_BPM: int = 120
 # GM drum channel note numbers for the .mid side-output (channel 10 / index 9).
 SERVO_MIDI_NOTES: dict[int, int] = {
     0: 49,  # Crash Cymbal 1
-    1: 45,  # Low Tom
-    2: 47,  # Low-Mid Tom
-    3: 50,  # High Tom
+    1: 47,  # Low-Mid Tom
+    2: 36,  # Bass Drum 1
+    3: 38,  # Acoustic Snare
     4: 42,  # Closed Hi-Hat
-    5: 38,  # Acoustic Snare
 }
 
 # ──────────────────────────────────────────────────────────────────────────────

@@ -1,6 +1,16 @@
 # Serial Protocol
 
 The Python controller sends newline-terminated text commands over USB serial.
+
+## Active channels
+
+- `0`: cymbal
+- `1`: small tom
+- `2`: big tom, used as the kick drum
+- `3`: small tom, used as the snare drum
+- `4`: hi-hat
+
+Channels outside `0` through `4` are invalid.
 The Arduino responds with `OK ...`, `ERR ...`, or status lines.
 
 Default baud rate:

@@ -3,8 +3,7 @@
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40);
 
-const int SERVO_COUNT = 16;
-const int ACTIVE_SERVO_COUNT = 6;
+const int ACTIVE_SERVO_COUNT = 5;
 const int DEFAULT_RETURN_ANGLE = 90;
 const int DEFAULT_STRIKE_ANGLE = 35;
 const int DEFAULT_DWELL_MS = 10;
@@ -27,7 +26,7 @@ struct ServoConfig {
   bool strikeActive;
 };
 
-ServoConfig servos[SERVO_COUNT];
+ServoConfig servos[ACTIVE_SERVO_COUNT];
 String inputLine = "";
 
 String nextToken(String &line);
@@ -38,7 +37,7 @@ int angleToPulse(int angle) {
 }
 
 void writeServoAngle(int servo, int angle) {
-  if (servo < 0 || servo >= SERVO_COUNT) {
+  if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
     return;
   }
 
@@ -47,7 +46,7 @@ void writeServoAngle(int servo, int angle) {
 }
 
 void setServoTarget(int servo, int targetAngle) {
-  if (servo < 0 || servo >= SERVO_COUNT) {
+  if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
     return;
   }
 
@@ -79,7 +78,7 @@ void updateServo(int servo, unsigned long now) {
 }
 
 void hitServo(int servo) {
-  if (servo < 0 || servo >= SERVO_COUNT) {
+  if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
     Serial.println("ERR invalid servo");
     return;
   }
@@ -102,7 +101,7 @@ void hitMultipleServos(String line) {
     }
 
     int servo = servoToken.toInt();
-    if (servo < 0 || servo >= SERVO_COUNT) {
+    if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
       Serial.println("ERR invalid servo");
       return;
     }
@@ -122,7 +121,7 @@ void hitMultipleServos(String line) {
 }
 
 void restServo(int servo, bool printAck = true) {
-  if (servo < 0 || servo >= SERVO_COUNT) {
+  if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
     Serial.println("ERR invalid servo");
     return;
   }
@@ -151,7 +150,7 @@ String nextToken(String &line) {
 }
 
 void printServoStatus(int servo) {
-  if (servo < 0 || servo >= SERVO_COUNT) {
+  if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
     Serial.println("ERR invalid servo");
     return;
   }
@@ -202,7 +201,7 @@ void handleCommand(String line) {
   }
 
   if (command == "ALLREST") {
-    for (int servo = 0; servo < SERVO_COUNT; servo++) {
+      for (int servo = 0; servo < ACTIVE_SERVO_COUNT; servo++) {
       restServo(servo, false);
     }
     Serial.println("OK ALLREST");
@@ -216,7 +215,7 @@ void handleCommand(String line) {
     int dwellMs = nextToken(line).toInt();
     int stepDelayMs = nextToken(line).toInt();
 
-    if (servo < 0 || servo >= SERVO_COUNT) {
+    if (servo < 0 || servo >= ACTIVE_SERVO_COUNT) {
       Serial.println("ERR invalid servo");
       return;
     }
@@ -260,7 +259,7 @@ void setup() {
   pwm.setPWMFreq(SERVO_FREQ);
   delay(10);
 
-  for (int servo = 0; servo < SERVO_COUNT; servo++) {
+  for (int servo = 0; servo < ACTIVE_SERVO_COUNT; servo++) {
     servos[servo].returnAngle = DEFAULT_RETURN_ANGLE;
     servos[servo].strikeAngle = DEFAULT_STRIKE_ANGLE;
     servos[servo].dwellMs = DEFAULT_DWELL_MS;
@@ -278,7 +277,7 @@ void setup() {
 
 void loop() {
   unsigned long now = millis();
-  for (int servo = 0; servo < SERVO_COUNT; servo++) {
+  for (int servo = 0; servo < ACTIVE_SERVO_COUNT; servo++) {
     updateServo(servo, now);
   }
 
